@@ -30,9 +30,9 @@ deb-amd64 http://archive.ubuntu.com/ubuntu bionic-updates main restricted univer
 #deb-amd64 http://archive.ubuntu.com/ubuntu bionic-proposed main restricted universe multiverse
 #deb-amd64 http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse
 
-deb-i386 http://archive.ubuntu.com/ubuntu bionic main main/debian-installer main/installer-i386 restricted universe multiverse
-deb-i386 http://archive.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
-deb-i386 http://archive.ubuntu.com/ubuntu bionic-updates main restricted universe multiverse
+#deb-i386 http://archive.ubuntu.com/ubuntu bionic main main/debian-installer main/installer-i386 restricted universe multiverse
+#deb-i386 http://archive.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
+#deb-i386 http://archive.ubuntu.com/ubuntu bionic-updates main restricted universe multiverse
 #deb-i386 http://archive.ubuntu.com/ubuntu bionic-proposed main restricted universe multiverse
 #deb-i386 http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse
 
@@ -41,6 +41,13 @@ deb-i386 http://archive.ubuntu.com/ubuntu bionic-updates main restricted univers
 #deb-src http://archive.ubuntu.com/ubuntu bionic-updates main restricted universe multiverse
 #deb-src http://archive.ubuntu.com/ubuntu bionic-proposed main restricted universe multiverse
 #deb-src http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse
+
+deb http://archive.canonical.com/ubuntu bionic partner
+#deb-src http://archive.canonical.com/ubuntu bionic partner
+
+deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse
+#deb-src http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse
+
 
 # Uubuntu 16.04
 #deb-amd64 http://archive.ubuntu.com/ubuntu xenial main main/debian-installer main/installer-amd64 restricted universe multiverse
@@ -61,6 +68,13 @@ deb-i386 http://archive.ubuntu.com/ubuntu bionic-updates main restricted univers
 #deb-src http://archive.ubuntu.com/ubuntu xenial-proposed main restricted universe multiverse
 #deb-src http://archive.ubuntu.com/ubuntu xenial-backports main restricted universe multiverse
 
+#deb http://archive.canonical.com/ubuntu xenial partner
+#deb-src http://archive.canonical.com/ubuntu xenial partner
+
+#deb http://security.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse
+#deb-src http://security.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse
+
+
 # Uubuntu 14.04
 #deb-amd64 http://archive.ubuntu.com/ubuntu trusty main main/debian-installer main/installer-amd64 restricted universe multiverse
 #deb-amd64 http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
@@ -80,7 +94,16 @@ deb-i386 http://archive.ubuntu.com/ubuntu bionic-updates main restricted univers
 #deb-src http://archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
 #deb-src http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
 
+#deb http://archive.canonical.com/ubuntu trusty partner
+#deb-src http://archive.canonical.com/ubuntu trusty partner
+
+#deb http://security.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse
+#deb-src http://security.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse
+
+
 clean http://archive.ubuntu.com/ubuntu
+clean http://security.ubuntu.com/ubuntu
+clean http://archive.canonical.com/ubuntu
 END
 
     fi
